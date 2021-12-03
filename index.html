@@ -1,10 +1,71 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jeremy's Portfolio</title>
-    </head>
-    <body>
-        <p>Testing!</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="align-left">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="align-right">
+                <div class="brand-text">
+                    <div>Jeremy Moyes</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background-image: url(images/portfolio/C-OpenGL-OIT.png)"></div>
+                    <div class="portfolio-fade">
+                        <img src="images/misc/fade-left.png">
+                        <div class="logo-image-left">
+                            <img src="images/logos/c++.png" style="width: 25%">
+                        </div>
+                        <div class="portfolio-text-left">
+                            <h1>Hello</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background-image: url(images/portfolio/C-OpenGL-OIT.png)"></div>
+                    <div class="portfolio-fade">
+                        <img src="images/misc/fade-right.png">
+                        <div class="logo-image-right">
+                            <img src="images/logos/c.png" style="width: 25%">
+                        </div>
+                        <div class="portfolio-text-right">
+                            <h1>Nope!</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    /*
+    const portfolioItems = document.querySelectorAll(".portfolio-item")
+    
+    portfolioItems.forEach(item => {
+        item.addEventListener("mouseover", () => {
+            item.childNodes[1].classList.add('image-darken')
+        })
+        item.addEventListener("mouseout", () => {
+            item.childNodes[1].classList.remove('image-darken')
+        })
+    })
+    */
+</script>
 </html>
