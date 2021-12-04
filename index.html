@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremy's Portfolio</title>
+    <title>Jeremy Moyes' Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,27 +26,34 @@
 
         <div class="content">
             <div class="portfolio-items">
-                <div class="portfolio-item">
+                <div class="portfolio-item" url="https://github.com/Je06jm/C-OpenGL-OIT">
                     <div class="portfolio-image" style="background-image: url(images/portfolio/C-OpenGL-OIT.png)"></div>
                     <div class="portfolio-fade">
                         <img src="images/misc/fade-left.png">
                         <div class="logo-image-left">
-                            <img src="images/logos/c++.png" style="width: 25%">
+                            <img src="images/logos/c++.png">
                         </div>
                         <div class="portfolio-text-left">
-                            <h1>Hello</h1>
+                            <h1>OpenGL Order Independent Transparency</h1>
+                            <h3>Using C++ and modern OpenGL, I wrote a demo exploring a different approach to rendering transparent objects to reduce CPU overhead.</h3>
+                            <h3>Traditional transparency approaches require additional CPU computation to sort objects, where this demo moves the computation to the GPU.</h3>
+                            <h4>Click to view the source</h4>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image" style="background-image: url(images/portfolio/C-OpenGL-OIT.png)"></div>
+                <div class="portfolio-item" url="https://github.com/Je06jm/Django-Polls">
+                    <div class="portfolio-image" style="background-image: url(images/portfolio/DJango.png)"></div>
                     <div class="portfolio-fade">
-                        <img src="images/misc/fade-right.png">
-                        <div class="logo-image-right">
-                            <img src="images/logos/c.png" style="width: 25%">
+                        <img src="images/misc/fade-left.png">
+                        <div class="logo-image-left">
+                            <img src="images/logos/python.png">
                         </div>
-                        <div class="portfolio-text-right">
-                            <h1>Nope!</h1>
+                        <div class="portfolio-text-left">
+                            <h1>Django Polls</h1>
+                            <h3>Using Python, Django, and Docker, I explored CRUD and REST principles.</h3>
+                            <h3>In this demo, users can post and vote on polls using a SQL based database.</h3>
+                            <h3>Django is then ran within a docker container.</h3>
+                            <h4>Click to view the source</h4>
                         </div>
                     </div>
                 </div>
@@ -55,17 +62,14 @@
     </div>
 </body>
 <script>
-    /*
+    
     const portfolioItems = document.querySelectorAll(".portfolio-item")
     
     portfolioItems.forEach(item => {
-        item.addEventListener("mouseover", () => {
-            item.childNodes[1].classList.add('image-darken')
-        })
-        item.addEventListener("mouseout", () => {
-            item.childNodes[1].classList.remove('image-darken')
+        item.addEventListener("click", () => {
+            window.location.href = item.getAttribute("url")
         })
     })
-    */
+    
 </script>
 </html>

@@ -1,6 +1,12 @@
-/* Main styles */
+/* Master styles */
 body {
     margin: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
@@ -8,7 +14,25 @@ body {
     grid-template-columns: 1fr;
 }
 
+/* Fonts */
+
+@font-face {
+    font-family: Mukta;
+    src: url(fonts/Mukta-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Mukta;
+    src: url(fonts/Mukta-Bold.ttf);
+    font-weight: 600;
+}
+
 /* Nav styles */
+
+* {
+    font-family: Mukta;
+}
 
 .nav-bar {
     display: flex;
@@ -20,6 +44,7 @@ body {
     height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
+    font-weight: 600;
 }
 
 .nav-link a {
@@ -38,6 +63,7 @@ body {
 
 .brand-text {
     color: #4a4a4a;
+    font-weight: 600;
 }
 
 .align-left {
@@ -67,13 +93,13 @@ body {
 
 .portfolio-item {
     position: relative;
-    
+    height: 644px;
 }
 
 .portfolio-fade > img {
     transition: 0.5s;
     top: 0%;
-    height: 40em;
+    height: 644px;
     width: 100%;
     opacity: 0;
 }
@@ -86,15 +112,15 @@ body {
 .portfolio-fade:hover > img {
     transition: 1s;
     top: 0%;
-    height: 40em;
+    height: 644px;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .portfolio-image {
     position: absolute;
     top: 0%;
-    height: 40em;
+    height: 644px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -116,6 +142,7 @@ body {
 
 .logo-image-left img {
     transition: 0.5s;
+    width: 25%;
     height: auto;
     padding-left: 100px;
     padding-top: 260px;
@@ -125,6 +152,7 @@ body {
 
 .logo-image-right img {
     transition: 0.5s;
+    width: 25%;
     height: auto;
     padding-right: 100px;
     padding-top: 260px;
@@ -137,7 +165,7 @@ body {
     transition: 0.5s;
     position: absolute;
     top: 0%;
-    right: -20%;
+    right: 0%;
     padding-right: 50px;
     padding-top: 20px;
     width: 50%;
