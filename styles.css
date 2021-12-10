@@ -96,6 +96,10 @@ body::-webkit-scrollbar {
     height: 644px;
 }
 
+.portfolio-item:hover {
+    cursor: pointer;
+}
+
 .portfolio-fade > img {
     transition: 0.5s;
     top: 0%;
