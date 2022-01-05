@@ -206,6 +206,11 @@ body::-webkit-scrollbar {
     padding-left: 150px;
 }
 
+.padded-text {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
 .link a {
     color: #4a4a4a;
     text-decoration: none;
@@ -215,4 +220,11 @@ body::-webkit-scrollbar {
 .link:hover a {
     color: black;
     border-bottom: 1px solid black;
+}
+
+.picture {
+    float: right;
+    width: 400px;
+    height: 400px;
+    margin-left: 40px;
 }
