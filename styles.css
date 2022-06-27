@@ -26,12 +26,14 @@ body::-webkit-scrollbar {
     font-family: Mukta;
     src: url(fonts/Mukta-Regular.ttf);
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Mukta;
     src: url(fonts/Mukta-Bold.ttf);
     font-weight: 600;
+    font-display: swap;
 }
 
 /* Nav styles */
@@ -54,7 +56,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-link a {
-    color: #8a8a8a;
+    color: #696969;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -199,6 +201,26 @@ body::-webkit-scrollbar {
     padding-right: 100px;
     padding-top: 260px;
     object-fit: contain;
+}
+
+h2 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 /* Misc styles */
